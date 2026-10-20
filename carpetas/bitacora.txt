@@ -1,0 +1,15 @@
+URL solicitada: http://127.0.0.1:5500/promociones.html
+
+Protocolo: HTTP
+Host: 127.0.0.1
+Puerto: 5500
+Ruta: /promociones.html
+Método HTTP: GET
+Código de estado: 404 Not Found
+
+Significado:
+El código 404 indica que el servidor no encuentra el recurso
+solicitado en la ruta especificada. En este caso, se intentó
+acceder a promociones.html, una página que no existe en el
+proyecto. El servidor respondió con el mensaje
+"Cannot GET /promociones.html".
