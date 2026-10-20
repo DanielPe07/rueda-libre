@@ -13,3 +13,29 @@ solicitado en la ruta especificada. En este caso, se intentó
 acceder a promociones.html, una página que no existe en el
 proyecto. El servidor respondió con el mensaje
 "Cannot GET /promociones.html".
+
+
+1. HTML:
+HTML se utilizará para crear la estructura y organizar
+el contenido de la página web de Rueda Libre.
+
+Ejemplo:
+Mostrar el nombre del negocio, una descripción de los
+servicios de alquiler de bicicletas y los precios.
+
+2. CSS:
+CSS se utilizará para definir la apariencia visual de
+la página, incluyendo colores, tamaños, márgenes y
+distribución de los elementos.
+
+Ejemplo:
+Diseñar tarjetas para mostrar las bicicletas disponibles,
+utilizando los colores de la marca Rueda Libre.
+
+3. JavaScript:
+JavaScript se utilizará para agregar interactividad y
+permitir que los usuarios realicen acciones en la página.
+
+Ejemplo:
+Calcular el precio del alquiler de una bicicleta según
+la cantidad de horas seleccionadas por el usuario.
