@@ -1,26 +1,44 @@
-<title>Reservas - Pedaleando Riwi</title>
-</body>
-<h1>Reservas</h1>
-<p>Realiza tu reserva ahora mismo y disfruta de una experiencia inolvidable.</p>
-  <a href="https://wa.me/573741904328" target="_blank">Haz clic aquí para enviarnos un mensaje por WhatsApp y realizar tu reserva</a>
-  <header>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas - Pedaleando Riwi</title>
+ </head>
+ <body>
+
+<header>
+    <h1>Reservas</h1>
+    <p>Realiza tu reserva ahora mismo y disfruta de una experiencia inolvidable.</p>
+   
+ <dl>
     <dt>Nota:</dt>
     <dd>Los precios están sujetos a cambios y pueden variar según la temporada y la disponibilidad. Para obtener información actualizada, contáctanos directamente.</dd>
     <dd>Todos los precios incluyen casco y equipo de seguridad.</dd>
-    <a href="mailto:contacto@pedaleandoriwi.com">
-    contacto@pedaleandoriwi.com
-</a>
-</header>
-<main> 
-<ul>
-  <li>Alquiler de Bicicleta (2 horas) - $10.000</li>
-  <li>Recorrido Guiado (1 hora) - $15.000</li>
-  <li>Excursión a las Montañas (1 día) - $50.000</li>
-</main>
-<section>
-  <h2>Formulario De Reserva</h2>
+ </dl> 
+      
+    <a href="mailto:contact@pedalriwi.com">
+        contacto@pedalriwi.com
+      
+      </a>
+    </header>
 
-  <form action="https://formspree.io/f/mnqvkwqj" method="POST">
+    <main> 
+  <section>
+    <h2>Paquetes Disponibles</h2>
+    <ul>
+      <li>Alquiler de Bicicleta (2 horas) - $10.000</li>
+      <li>Recorrido Guiado (1 hora) - $15.000</li>
+      <li>Excursión a las Montañas (1 día) - $50.000</li>
+    </ul>
+  </section>
+
+
+<section>
+    <h2>Formulario De Reserva</h2>
+    <form action="https://formspree.io/f/mnqvkwqj" method="post">
+    <fieldset>
+    <legend>Tus datos</legend>
     <label for="nombre">Nombre:</label>
     <input type="text" id="nombre" name="nombre" required>
 
@@ -29,10 +47,15 @@
 
     <label for="telefono">Teléfono:</label>
     <input type="tel" id="telefono" name="telefono" required>
-
-    <label for="paquete">Paquete Seleccionado:</label>
+    </fieldset>
+    
+    
+   <fieldset>
+    <legend>Tu alquiler</legend>
+    
+    <label for="paquete">Paquete seleccionado:</label>
     <select id="paquete" name="paquete" required>
-      <option value="">Seleccione un paquete</option>
+      <option value="">Selecciona un paquete</option>
       <option value="alquiler_bicicleta">Alquiler de Bicicleta (2 horas)</option>
       <option value="recorrido_guiado">Recorrido Guiado (1 hora)</option>
       <option value="excursion_montanas">Excursión a las Montañas (1 día)</option>
@@ -40,17 +63,50 @@
 
     <label for="fecha">Fecha de Reserva:</label>
     <input type="date" id="fecha" name="fecha" required>
+    <label for="horas">Cantidad de Horas:</label>
+    <input type="number" id="horas" name="horas" min="1" required >
+    <p>¿Que tipo de bicicleta prefieres?</p>
 
-    <button type="submit">Enviar Reserva</button>
+    <input type="radio" id="bicicleta_montana" name="tipo_bicicleta" value="bicicleta_montana" required>
+    <label for="bicicleta_montana">Bicicleta de Montaña</label>
 
+    <input type="radio" id="bicicleta_urbana" name="tipo_bicicleta" value="bicicleta_urbana">
+    <label for="bicicleta_urbana">Bicicleta Urbana</label>
+    
+    <input type="radio" id="ruta" name="tipo_bicicleta" value="ruta">
+    <label for="ruta">Ruta</label>
+    </fieldset>
+
+<fieldset>
+    <legend>Confirmación</legend>
+
+    <p>¿Qué servicios adicionales necesitas?</p>
+
+    <input type="checkbox" id="guia" name="extras" value="guia">
+    <label for="guia">Guía adicional</label>
+
+    <input type="checkbox" id="seguro" name="extras" value="seguro">
+    <label for="seguro">Seguro adicional</label>
+
+    <label for="observaciones">Observaciones o solicitudes especiales:</label>
+    <textarea id="observaciones" name="observaciones" rows="4"></textarea>
+
+    <input type="checkbox" id="confirmacion" name="confirmacion" value="acepto" required>
+    <label for="confirmacion">Confirmo que los datos ingresados en mi reserva son correctos.</label>
+</fieldset>
+
+  <button type="submit">Enviar Reserva</button>
+  
+  </form>
 
 </section>
+</main>
 
-<mai>
-
- <footer>
+<footer>
     <p>&copy; 2024 Pedaleando Riwi. Todos los derechos reservados.</p>
     <a href="mailto:contacto@pedaleandoriwi.com">contacto@pedaleandoriwi.com</a>
 </footer>
 
-<body>
+</body>
+</html>
+
